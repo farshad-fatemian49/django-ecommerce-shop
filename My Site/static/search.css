@@ -1,0 +1,36 @@
+.search {
+    padding:10px;
+    color:#eee;
+    background: linear-gradient(to bottom right, #B1227A , #429AEE);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.search :is(input,button){
+    color:inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.search__input{
+    width:0;
+    transition: width 3s;
+}
+
+.search__byn{
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.search:focus-within input{
+    width: 200px;
+}
+
+::placeholder {
+    color:inherit
+}
