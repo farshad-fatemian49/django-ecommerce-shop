@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div style=" width: 50% ; position: relative ; left: 130px; top:150px ">
+      {% comment %} <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">My products</li>
+          {% for product in products  %}
+              <li class="list-group-item">
+                <a href="{% url 'product:product_detail' product.id %}">{{product.name}}</a>
+              </li>
+          {% endfor %}
+      </ul>  {% endcomment %}
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+
+        {% for product in products  %}
+        <a href="{% url 'product:product_detail' product.id %}">
+          <div class="col mx-4">
+            <div class="card">
+              <img src="{{product.image.url}}" class="card-img-top" alt="...">
+              
+              <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.dollar_amount}}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+            
+        {% endfor %}
+
+
+
+      </div>
+      
+    </div> 
+
+{% endblock content %}

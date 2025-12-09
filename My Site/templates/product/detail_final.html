@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+
+{% block settings %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Page 3</title>
+<link rel="stylesheet" href='{% static "detail/css/nicepage.css"%}' media="screen">
+<link rel="stylesheet" href='{% static "detail/css/Page-3.css"%}' media="screen">
+<script class="u-script" type="text/javascript" src='{% static "detail/js/jquery-1.9.1.min.js"%}' defer=""></script>
+<script class="u-script" type="text/javascript" src='{% static "detail/js/nicepage.js"%}' "="" defer=""></script>
+<meta name="generator" content="Nicepage 4.15.11, nicepage.com">
+<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name": ""
+}</script>
+<meta name="theme-color" content="#478ac9">
+<meta property="og:title" content="Page 3">
+<meta property="og:type" content="website">
+{% endblock settings %}
+
+
+
+{% block content %}
+
+<div class="u-body u-xl-mode">
+
+<section class="u-align-center u-clearfix u-section-1" id="sec-cfb4">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
+      <ul class="u-tab-list u-unstyled" role="tablist">
+        <li class="u-tab-item" role="presentation">
+          <a class="active u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Description</a>
+        </li>
+        <li class="u-tab-item" role="presentation">
+          <a class="u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Specifications</a>
+        </li>
+        <li class="u-tab-item" role="presentation">
+          <a class="u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Reviews</a>
+        </li>
+        <li class="u-tab-item u-tab-item-4" role="presentation">
+          <a class="u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-4" id="tab-6ff1" href="#link-tab-6ff1" role="tab" aria-controls="link-tab-6ff1" aria-selected="false">Questions</a>
+        </li>
+      </ul>
+      <div class="u-tab-content">
+        <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+          <div class="u-container-layout u-container-layout-1">
+            <img src="{{s_product.image.url}}" alt="" class="u-image u-image-default u-image-1" data-image-width="1000" data-image-height="1000">
+            <h5 class="u-text u-text-default u-text-1">About This Item</h5>
+            <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            <div class="u-table u-table-responsive u-table-1">
+              <table class="u-table-entity">
+                <colgroup>
+                  <col width="50%">
+                  <col width="50%">
+                </colgroup>
+                <tbody class="u-table-body">
+                  <tr style="height: 52px;">
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell u-table-cell-1">Product Name</td>
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell">{{s_product.name}}</td>
+                  </tr>
+                  <tr style="height: 53px;">
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell u-table-cell-3">Price</td>
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell">{{s_product.dollar_amount}}</td>
+                  </tr>
+                  <tr style="height: 53px;">
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell u-table-cell-5">Availability</td>
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell">{{s_product.availability}}</td>
+                  </tr>
+                  <tr style="height: 73px;">
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell u-table-cell-7">Last Updated</td>
+                    <td class="u-border-2 u-border-grey-10 u-border-no-left u-border-no-right u-table-cell">{{s_product.updated}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style=" width: 50% ; background-color:white ; padding : 10px ; float: left; margin: 0px 10px 0px 10px">
+                        
+                {% if buy_form1 %}
+                    <form action="">
+                      {{buy_form1.as_p}}
+                      {% csrf_token %}
+                      <input type="submit" value="Buy it">
+                    </form>
+                {% else %}
+                    <a href="">اطلاع بده</a>
+                {% endif %}
+            
+                
+                
+               
+            
+            
+              </div >
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+          <div class="u-container-layout u-valign-top u-container-layout-2">
+            <p class="u-text u-text-3">{{s_product.description}}<br>
+              {% comment %} <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  {% endcomment %}
+            </p>
+          </div>
+        </div>
+        <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+          <div class="u-container-layout u-container-layout-3">
+            <h4 class="u-text u-text-default u-text-4">Comments</h4>
+            {% comment %} <p class="u-text u-text-default u-text-5">Sample text. Click to select the text box. Click again or double click to start editing the text.</p> {% endcomment %}
+            <ul>
+      
+              {% for comment in s_comments %}
+                <li>{{ comment.writer }} : {{ comment.comment }}</li>
+              
+                <span>
+        
+                  {% if user == comment.writer %}
+                    <a href="{% url 'product:comment_update' comment.id %}">Edit</a>
+                  {% endif %}
+                
+                </span>
+              {% endfor %}
+            </ul>
+        
+            
+        
+            <div>
+              
+              {% if user.is_authenticated %}
+              <form action="" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="comment now" class="u-btn u-button-style u-btn-1">
+              </form>
+                
+              {% endif %}
+                
+            </div>
+            
+            {% comment %} <a href="https://nicepage.com" class="u-btn u-button-style u-btn-1">write product review</a> {% endcomment %}
+          </div>
+        </div>
+        <div class="u-container-style u-tab-pane u-white u-tab-pane-4" id="link-tab-6ff1" role="tabpanel" aria-labelledby="tab-6ff1">
+          <div class="u-container-layout u-container-layout-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+</div>
+
+
+{% endblock content %}
+
+    
+    
+    
+    

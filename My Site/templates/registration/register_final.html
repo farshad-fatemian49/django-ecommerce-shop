@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block settings %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Create your website with Nicepage.">
+    <meta name="description" content="">
+    <title>Home 1</title>
+    <link rel="stylesheet" href='{% static "register/css/nicepage.css"%}' media="screen">
+    <link rel="stylesheet" href='{% static "register/css/Home-1.css"%}' media="screen">
+    <script class="u-script" type="text/javascript" src='{% static "register/js/jquery-1.9.1.min.js"%}' defer=""></script>
+    <script class="u-script" type="text/javascript" src='{% static "register/js/nicepage.js"%}' "="" defer=""></script>
+    <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "images/default-logo.png"
+    }
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home 1">
+    <meta property="og:type" content="website">
+
+{% endblock settings %}
+
+
+
+
+
+{% block content %}
+    <div class="u-body u-xl-mode" data-lang="en" >
+
+        <section style='background-image: url("{% static "images/v1072-037-c-copy-min.jpg"%}");' class="u-clearfix u-image u-section-1" id="carousel_707c" data-image-width="1620" data-image-height="1080"  >
+          <div class="u-clearfix u-gutter-44 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <div class="u-container-style u-layout-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <div class="u-align-left u-container-style u-expanded-width u-group u-radius-30 u-shape-round u-white u-group-1">
+                      <div class="u-container-layout u-container-layout-2">
+                        <h4 class="u-text u-text-default u-text-1"> Register Here</h4>
+                        <div class="u-form u-form-1">
+                          <form action="{% url 'accounts:register' %}" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
+                            {% csrf_token %}
+                            <div class="u-form-group u-form-name">
+                              <label class="u-label">{{form.username.label}}</label>
+                              {% comment %} <input type="text" placeholder="Enter your Name" id="name-4c18" name="username" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required=""> {% endcomment %}
+                              {{form.username}}
+                            </div>
+                            <div class="u-form-email u-form-group">
+                              <label for="email-4c18" class="u-label">{{form.password1.label}}</label>
+                              {% comment %} <input type="password" placeholder="Enter a valid email address" name="password1" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required=""> {% endcomment %}
+                              {{form.password1}}
+                            </div>
+                            <div class="u-form-group u-form-message">
+                              <label for="message-4c18" class="u-label">{{form.password2.label}}</label>
+                              {% comment %} <textarea placeholder="Enter your message" rows="4" cols="50" id="message-4c18" name="password2" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10" required=""></textarea> {% endcomment %}
+                              {% comment %} <input type="password" class="u-border-2 u-border-grey-5 u-grey-5 u-input u-input-rectangle u-radius-10"> {% endcomment %}
+                              {{form.password2}}
+                            </div>
+                            <div class="u-form-agree u-form-group u-form-group-4">
+                              <input type="checkbox" id="agree-a472" name="agree" class="u-agree-checkbox" required="">
+                              <label for="agree-a472" class="u-label">I accept the <a href="#">Terms of Service</a>
+                              </label>
+                            </div>
+                            <div class="u-align-right u-form-group u-form-submit">
+                              {% comment %} <a href="#" class="u-active-palette-2-base u-border-5 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-palette-4-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-2-base u-palette-4-base u-radius-10 u-btn-1">Submit your request</a>
+                              <input type="submit" value="submit" class="u-form-control-hidden"> {% endcomment %}
+                              <button type="submit">Register Now</button>
+                            </div>
+                            {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                            <input type="hidden" value="" name="recaptchaResponse">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-layout-cell u-opacity u-opacity-65 u-palette-4-base u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-3">
+                    <h2 class="u-text u-text-2">Create your website with Nicepage.</h2>
+                    <p class="u-text u-text-3"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    </div>
+
+
+{% endblock content %}
